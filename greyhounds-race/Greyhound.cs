@@ -10,11 +10,13 @@ public class Greyhound
 
     public bool Run()
     {
-
+        Location += MyRandom.Next(1, 5);
+        MyPictureBox.Left = StartingPosition + Location;
+        return (MyPictureBox.Left >= RaceTrackLength);
     }
 
     public void TakeStartingPosition()
     {
-
+        
     }
 }
