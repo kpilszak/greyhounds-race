@@ -27,6 +27,7 @@ public class Player
 
     public void Collect(int Winner)
     {
-
+        Cash += MyBet.PayOut(Winner);
+        UpdateLabels();
     }
 }
