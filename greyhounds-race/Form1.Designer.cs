@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.startButton = new System.Windows.Forms.Button();
             this.raceTrackPictureBox = new System.Windows.Forms.PictureBox();
@@ -49,6 +50,7 @@
             this.betLabel = new System.Windows.Forms.Label();
             this.grehoundNumberButton = new System.Windows.Forms.DomainUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.raceTrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox2)).BeginInit();
@@ -277,7 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 579);
+            this.ClientSize = new System.Drawing.Size(839, 578);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.greyhoundPictureBox4);
             this.Controls.Add(this.greyhoundPictureBox3);
@@ -323,6 +325,7 @@
         private System.Windows.Forms.Label betLabel;
         private System.Windows.Forms.DomainUpDown grehoundNumberButton;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
