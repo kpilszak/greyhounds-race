@@ -16,12 +16,13 @@ public class Player
 
     public void ClearBet()
     {
-
+        MyBet = null;
     }
 
     public void PlaceBet(int Amount, int DogToWin)
     {
-
+        MyBet = new Bet() { this.Amount = Amount, this.Dog = DogToWin };
+        return (Cash >= Amount);
     }
 
     public void Collect(int Winner)
