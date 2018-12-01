@@ -1,30 +1,6 @@
-﻿using System.Windows.Forms;
-
-public class Player
+﻿namespace greyhounds_race
 {
-    public string Name;
-    public Bet MyBet;
-    public int Cash;
-    public RadioButton MyRadioButton;
-    public Label MyLabel;
-
-    public void UpdateLabels()
+    internal class Player
     {
-
-    }
-
-    public void ClearBet()
-    {
-
-    }
-
-    public void PlaceBet(int Amount, int DogToWin)
-    {
-
-    }
-
-    public void Collect(int Winner)
-    {
-
     }
 }
