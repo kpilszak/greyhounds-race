@@ -12,6 +12,8 @@ namespace greyhounds_race
 {
     public partial class Form1 : Form
     {
+        public Greyhound[] GreyhoundArray = new Greyhound[4];
+
         public Form1()
         {
             InitializeComponent();
