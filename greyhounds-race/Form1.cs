@@ -88,7 +88,8 @@ namespace greyhounds_race
 
         private void startButton_Click(object sender, EventArgs e)
         {
-
+            groupBox1.Enabled = false;
+            timer1.Start();
         }
 
         private void playerRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -128,8 +129,7 @@ namespace greyhounds_race
         private void timer1_Tick(object sender, EventArgs e)
         {
             for (int i = 0; i < GreyhoundArray.Length; i++)
-            {
-                groupBox1.Enabled = false;
+            {                
                 if (GreyhoundArray[i].Run())
                 {
                     timer1.Stop();
