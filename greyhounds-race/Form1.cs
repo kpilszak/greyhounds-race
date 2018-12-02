@@ -58,7 +58,6 @@ namespace greyhounds_race
             PlayerArray[0] = new Player()
             {
                 Name = "Chuck",
-                MyBet = null,
                 Cash = 100,
                 PlayerButton = playerRadioButton1,
                 BetLabel = playerLabel1
@@ -66,8 +65,7 @@ namespace greyhounds_race
 
             PlayerArray[1] = new Player()
             {
-                Name = "Nate",
-                MyBet = null,
+                Name = "Nate",     
                 Cash = 70,
                 PlayerButton = playerRadioButton2,
                 BetLabel = playerLabel2
@@ -76,11 +74,55 @@ namespace greyhounds_race
             PlayerArray[2] = new Player()
             {
                 Name = "Dan",
-                MyBet = null,
                 Cash = 10,
                 PlayerButton = playerRadioButton3,
                 BetLabel = playerLabel3
             };
+
+            for (int i = 0; i < PlayerArray.Length; i++)
+            {
+                PlayerArray[i].ClearBet();
+                PlayerArray[i].UpdateLabels();
+            }
+        }
+
+        private void startButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            name.Text = PlayerArray[0].Name;
+        }
+
+        private void playerRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            name.Text = PlayerArray[1].Name;
+        }
+
+        private void playerRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            name.Text = PlayerArray[2].Name;
+        }
+        
+        private void betsButton_Click(object sender, EventArgs e)
+        {
+            if (playerRadioButton1.Checked)
+            {
+                PlayerArray[0].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value);
+                PlayerArray[0].UpdateLabels();
+            }
+            else if (playerRadioButton2.Checked)
+            {
+                PlayerArray[1].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value);
+                PlayerArray[1].UpdateLabels();
+            }
+            else if (playerRadioButton3.Checked)
+            {
+                PlayerArray[2].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value);
+                PlayerArray[2].UpdateLabels();
+            }
         }
     }
 }

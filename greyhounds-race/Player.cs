@@ -10,8 +10,6 @@ namespace greyhounds_race
         public RadioButton PlayerButton;
         public Label BetLabel;
 
-        public int Amount { get; private set; }
-
         public void UpdateLabels()
         {
             BetLabel.Text = MyBet.GetDescription();

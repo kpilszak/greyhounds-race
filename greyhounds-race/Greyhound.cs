@@ -9,7 +9,7 @@ namespace greyhounds_race
         public int RaceTrackLength;
         public PictureBox MyPictureBox = null;
         public int Location = 0;
-        public Random MyRandom;
+        public Random MyRandom = new Random();
 
         public bool Run()
         {

@@ -43,20 +43,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.betsButton = new System.Windows.Forms.Button();
-            this.amountButton = new System.Windows.Forms.DomainUpDown();
             this.betLabel = new System.Windows.Forms.Label();
-            this.grehoundNumberButton = new System.Windows.Forms.DomainUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.playerLabel1 = new System.Windows.Forms.Label();
-            this.playerLabel2 = new System.Windows.Forms.Label();
             this.playerLabel3 = new System.Windows.Forms.Label();
+            this.playerLabel2 = new System.Windows.Forms.Label();
+            this.playerLabel1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.amountButton = new System.Windows.Forms.NumericUpDown();
+            this.greyhoundNumberButton = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.raceTrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox4)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.amountButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greyhoundNumberButton)).BeginInit();
             this.SuspendLayout();
             // 
             // startButton
@@ -68,6 +70,7 @@
             this.startButton.TabIndex = 0;
             this.startButton.Text = "Start!";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // raceTrackPictureBox
             // 
@@ -141,6 +144,7 @@
             this.playerRadioButton1.TabStop = true;
             this.playerRadioButton1.Text = "playerRadioButton1";
             this.playerRadioButton1.UseVisualStyleBackColor = true;
+            this.playerRadioButton1.CheckedChanged += new System.EventHandler(this.playerRadioButton1_CheckedChanged);
             // 
             // playerRadioButton2
             // 
@@ -153,6 +157,7 @@
             this.playerRadioButton2.TabStop = true;
             this.playerRadioButton2.Text = "playerRadioButton2";
             this.playerRadioButton2.UseVisualStyleBackColor = true;
+            this.playerRadioButton2.CheckedChanged += new System.EventHandler(this.playerRadioButton2_CheckedChanged);
             // 
             // playerRadioButton3
             // 
@@ -165,6 +170,7 @@
             this.playerRadioButton3.TabStop = true;
             this.playerRadioButton3.Text = "playerRadioButton3";
             this.playerRadioButton3.UseVisualStyleBackColor = true;
+            this.playerRadioButton3.CheckedChanged += new System.EventHandler(this.playerRadioButton3_CheckedChanged);
             // 
             // label2
             // 
@@ -195,15 +201,7 @@
             this.betsButton.TabIndex = 16;
             this.betsButton.Text = "bets";
             this.betsButton.UseVisualStyleBackColor = true;
-            // 
-            // amountButton
-            // 
-            this.amountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountButton.Location = new System.Drawing.Point(203, 269);
-            this.amountButton.Name = "amountButton";
-            this.amountButton.Size = new System.Drawing.Size(79, 26);
-            this.amountButton.TabIndex = 17;
-            this.amountButton.Text = "5";
+            this.betsButton.Click += new System.EventHandler(this.betsButton_Click);
             // 
             // betLabel
             // 
@@ -215,26 +213,17 @@
             this.betLabel.TabIndex = 18;
             this.betLabel.Text = "$ on greyhound number";
             // 
-            // grehoundNumberButton
-            // 
-            this.grehoundNumberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grehoundNumberButton.Location = new System.Drawing.Point(482, 271);
-            this.grehoundNumberButton.Name = "grehoundNumberButton";
-            this.grehoundNumberButton.Size = new System.Drawing.Size(50, 26);
-            this.grehoundNumberButton.TabIndex = 19;
-            this.grehoundNumberButton.Text = "1";
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.greyhoundNumberButton);
+            this.groupBox1.Controls.Add(this.amountButton);
             this.groupBox1.Controls.Add(this.playerLabel3);
             this.groupBox1.Controls.Add(this.playerLabel2);
             this.groupBox1.Controls.Add(this.playerLabel1);
             this.groupBox1.Controls.Add(this.minimumBetLabel);
-            this.groupBox1.Controls.Add(this.grehoundNumberButton);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.betLabel);
             this.groupBox1.Controls.Add(this.playerRadioButton1);
-            this.groupBox1.Controls.Add(this.amountButton);
             this.groupBox1.Controls.Add(this.playerRadioButton2);
             this.groupBox1.Controls.Add(this.betsButton);
             this.groupBox1.Controls.Add(this.playerRadioButton3);
@@ -248,15 +237,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting House";
             // 
-            // playerLabel1
+            // playerLabel3
             // 
-            this.playerLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playerLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerLabel1.Location = new System.Drawing.Point(255, 108);
-            this.playerLabel1.Name = "playerLabel1";
-            this.playerLabel1.Size = new System.Drawing.Size(277, 26);
-            this.playerLabel1.TabIndex = 20;
-            this.playerLabel1.Text = "playerLabel1";
+            this.playerLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playerLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerLabel3.Location = new System.Drawing.Point(255, 221);
+            this.playerLabel3.Name = "playerLabel3";
+            this.playerLabel3.Size = new System.Drawing.Size(277, 26);
+            this.playerLabel3.TabIndex = 22;
+            this.playerLabel3.Text = "playerLabel3";
             // 
             // playerLabel2
             // 
@@ -268,15 +257,61 @@
             this.playerLabel2.TabIndex = 21;
             this.playerLabel2.Text = "playerLabel2";
             // 
-            // playerLabel3
+            // playerLabel1
             // 
-            this.playerLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playerLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerLabel3.Location = new System.Drawing.Point(255, 221);
-            this.playerLabel3.Name = "playerLabel3";
-            this.playerLabel3.Size = new System.Drawing.Size(277, 26);
-            this.playerLabel3.TabIndex = 22;
-            this.playerLabel3.Text = "playerLabel3";
+            this.playerLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playerLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerLabel1.Location = new System.Drawing.Point(255, 108);
+            this.playerLabel1.Name = "playerLabel1";
+            this.playerLabel1.Size = new System.Drawing.Size(277, 26);
+            this.playerLabel1.TabIndex = 20;
+            this.playerLabel1.Text = "playerLabel1";
+            // 
+            // amountButton
+            // 
+            this.amountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountButton.Location = new System.Drawing.Point(203, 271);
+            this.amountButton.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.amountButton.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.amountButton.Name = "amountButton";
+            this.amountButton.Size = new System.Drawing.Size(79, 26);
+            this.amountButton.TabIndex = 23;
+            this.amountButton.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // greyhoundNumberButton
+            // 
+            this.greyhoundNumberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greyhoundNumberButton.Location = new System.Drawing.Point(482, 271);
+            this.greyhoundNumberButton.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.greyhoundNumberButton.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.greyhoundNumberButton.Name = "greyhoundNumberButton";
+            this.greyhoundNumberButton.Size = new System.Drawing.Size(50, 26);
+            this.greyhoundNumberButton.TabIndex = 24;
+            this.greyhoundNumberButton.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 
@@ -302,6 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.amountButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greyhoundNumberButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,14 +358,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Button betsButton;
-        private System.Windows.Forms.DomainUpDown amountButton;
         private System.Windows.Forms.Label betLabel;
-        private System.Windows.Forms.DomainUpDown grehoundNumberButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label playerLabel3;
         private System.Windows.Forms.Label playerLabel2;
         private System.Windows.Forms.Label playerLabel1;
+        private System.Windows.Forms.NumericUpDown amountButton;
+        private System.Windows.Forms.NumericUpDown greyhoundNumberButton;
     }
 }
 

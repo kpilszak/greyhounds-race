@@ -1,0 +1,5 @@
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.csprojAssemblyReference.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds_race.Form1.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds_race.Properties.Resources.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.csproj.GenerateResource.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.csproj.CoreCompileInputs.cache
