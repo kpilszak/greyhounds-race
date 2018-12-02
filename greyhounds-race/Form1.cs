@@ -12,21 +12,50 @@ namespace greyhounds_race
 {
     public partial class Form1 : Form
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         public Greyhound[] GreyhoundArray = new Greyhound[4];
         public Player[] PlayerArray = new Player[3];
 
-=======
->>>>>>> parent of 624cd09... Add Greyhound objects
-=======
->>>>>>> parent of 624cd09... Add Greyhound objects
-=======
->>>>>>> parent of 624cd09... Add Greyhound objects
         public Form1()
         {
             InitializeComponent();
+            InitializeGreyhounds();
+            InitializePlayers();
+        }
+
+        private void InitializeGreyhounds()
+        {
+            GreyhoundArray[0] = new Greyhound()
+            {
+                MyPictureBox = greyhoundPictureBox1,
+                StartingPosition = greyhoundPictureBox1.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox1.Width                       
+            };
+
+            GreyhoundArray[1] = new Greyhound()
+            {
+                MyPictureBox = greyhoundPictureBox2,
+                StartingPosition = greyhoundPictureBox2.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox2.Width
+            };
+
+            GreyhoundArray[2] = new Greyhound()
+            {
+                MyPictureBox = greyhoundPictureBox3,
+                StartingPosition = greyhoundPictureBox3.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox3.Width
+            };
+
+            GreyhoundArray[3] = new Greyhound()
+            {
+                MyPictureBox = greyhoundPictureBox4,
+                StartingPosition = greyhoundPictureBox4.Left,
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox4.Width
+            };
+        }
+
+        private void InitializePlayers()
+        {
+            PlayerArray[0] = new Player() { Name = "", };
         }
     }
 }
