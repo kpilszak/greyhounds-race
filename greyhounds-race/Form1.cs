@@ -12,9 +12,12 @@ namespace greyhounds_race
 {
     public partial class Form1 : Form
     {
+<<<<<<< HEAD
         public Greyhound[] GreyhoundArray = new Greyhound[4];
         public Player[] PlayerArray = new Player[3];
 
+=======
+>>>>>>> parent of 624cd09... Add Greyhound objects
         public Form1()
         {
             InitializeComponent();
