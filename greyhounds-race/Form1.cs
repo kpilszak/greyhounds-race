@@ -14,9 +14,12 @@ namespace greyhounds_race
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public Greyhound[] GreyhoundArray = new Greyhound[4];
         public Player[] PlayerArray = new Player[3];
 
+=======
+>>>>>>> parent of 624cd09... Add Greyhound objects
 =======
 >>>>>>> parent of 624cd09... Add Greyhound objects
 =======
