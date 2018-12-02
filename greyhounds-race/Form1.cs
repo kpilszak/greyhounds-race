@@ -133,7 +133,7 @@ namespace greyhounds_race
                 if (GreyhoundArray[i].Run())
                 {
                     timer1.Stop();
-                    MessageBox.Show("The winner is Greyhound number " + (i + 1);
+                    MessageBox.Show("The winner is Greyhound number " + (i + 1));
                     for (int j = 0; i < PlayerArray.Length; j++)
                     {
                         PlayerArray[j].Collect(i);
