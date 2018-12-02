@@ -3,3 +3,8 @@ C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Deb
 C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds_race.Properties.Resources.resources
 C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.csproj.GenerateResource.cache
 C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.csproj.CoreCompileInputs.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\bin\Debug\greyhounds-race.exe.config
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\bin\Debug\greyhounds-race.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\bin\Debug\greyhounds-race.pdb
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\greyhounds-race\greyhounds-race\obj\Debug\greyhounds-race.pdb
