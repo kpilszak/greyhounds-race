@@ -41,9 +41,6 @@
             this.playerRadioButton2 = new System.Windows.Forms.RadioButton();
             this.playerRadioButton3 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.playerTextBox1 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.Label();
             this.betsButton = new System.Windows.Forms.Button();
             this.amountButton = new System.Windows.Forms.DomainUpDown();
@@ -51,6 +48,9 @@
             this.grehoundNumberButton = new System.Windows.Forms.DomainUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.playerLabel1 = new System.Windows.Forms.Label();
+            this.playerLabel2 = new System.Windows.Forms.Label();
+            this.playerLabel3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.raceTrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox2)).BeginInit();
@@ -176,33 +176,6 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Bets";
             // 
-            // playerTextBox1
-            // 
-            this.playerTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.playerTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerTextBox1.Location = new System.Drawing.Point(255, 107);
-            this.playerTextBox1.Name = "playerTextBox1";
-            this.playerTextBox1.Size = new System.Drawing.Size(277, 26);
-            this.playerTextBox1.TabIndex = 12;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(255, 163);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 26);
-            this.textBox1.TabIndex = 13;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(255, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 26);
-            this.textBox2.TabIndex = 14;
-            // 
             // name
             // 
             this.name.AutoSize = true;
@@ -253,6 +226,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.playerLabel3);
+            this.groupBox1.Controls.Add(this.playerLabel2);
+            this.groupBox1.Controls.Add(this.playerLabel1);
             this.groupBox1.Controls.Add(this.minimumBetLabel);
             this.groupBox1.Controls.Add(this.grehoundNumberButton);
             this.groupBox1.Controls.Add(this.label2);
@@ -264,9 +240,6 @@
             this.groupBox1.Controls.Add(this.playerRadioButton3);
             this.groupBox1.Controls.Add(this.name);
             this.groupBox1.Controls.Add(this.startButton);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.playerTextBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 264);
             this.groupBox1.Name = "groupBox1";
@@ -274,6 +247,36 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting House";
+            // 
+            // playerLabel1
+            // 
+            this.playerLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playerLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerLabel1.Location = new System.Drawing.Point(255, 108);
+            this.playerLabel1.Name = "playerLabel1";
+            this.playerLabel1.Size = new System.Drawing.Size(277, 26);
+            this.playerLabel1.TabIndex = 20;
+            this.playerLabel1.Text = "playerLabel1";
+            // 
+            // playerLabel2
+            // 
+            this.playerLabel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playerLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerLabel2.Location = new System.Drawing.Point(255, 164);
+            this.playerLabel2.Name = "playerLabel2";
+            this.playerLabel2.Size = new System.Drawing.Size(277, 26);
+            this.playerLabel2.TabIndex = 21;
+            this.playerLabel2.Text = "playerLabel2";
+            // 
+            // playerLabel3
+            // 
+            this.playerLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.playerLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerLabel3.Location = new System.Drawing.Point(255, 221);
+            this.playerLabel3.Name = "playerLabel3";
+            this.playerLabel3.Size = new System.Drawing.Size(277, 26);
+            this.playerLabel3.TabIndex = 22;
+            this.playerLabel3.Text = "playerLabel3";
             // 
             // Form1
             // 
@@ -316,9 +319,6 @@
         private System.Windows.Forms.RadioButton playerRadioButton2;
         private System.Windows.Forms.RadioButton playerRadioButton3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox playerTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Button betsButton;
         private System.Windows.Forms.DomainUpDown amountButton;
@@ -326,6 +326,9 @@
         private System.Windows.Forms.DomainUpDown grehoundNumberButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label playerLabel3;
+        private System.Windows.Forms.Label playerLabel2;
+        private System.Windows.Forms.Label playerLabel1;
     }
 }
 

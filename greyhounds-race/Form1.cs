@@ -55,7 +55,32 @@ namespace greyhounds_race
 
         private void InitializePlayers()
         {
-            PlayerArray[0] = new Player() { Name = "", };
+            PlayerArray[0] = new Player()
+            {
+                Name = "Chuck",
+                MyBet = null,
+                Cash = 100,
+                PlayerButton = playerRadioButton1,
+                BetLabel = playerLabel1
+            };
+
+            PlayerArray[1] = new Player()
+            {
+                Name = "Nate",
+                MyBet = null,
+                Cash = 70,
+                PlayerButton = playerRadioButton2,
+                BetLabel = playerLabel2
+            };
+
+            PlayerArray[2] = new Player()
+            {
+                Name = "Dan",
+                MyBet = null,
+                Cash = 10,
+                PlayerButton = playerRadioButton3,
+                BetLabel = playerLabel3
+            };
         }
     }
 }
