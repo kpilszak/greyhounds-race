@@ -45,20 +45,20 @@
             this.betsButton = new System.Windows.Forms.Button();
             this.betLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.greyhoundNumberButton = new System.Windows.Forms.NumericUpDown();
+            this.amountButton = new System.Windows.Forms.NumericUpDown();
             this.playerLabel3 = new System.Windows.Forms.Label();
             this.playerLabel2 = new System.Windows.Forms.Label();
             this.playerLabel1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.amountButton = new System.Windows.Forms.NumericUpDown();
-            this.greyhoundNumberButton = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.raceTrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox4)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.amountButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundNumberButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amountButton)).BeginInit();
             this.SuspendLayout();
             // 
             // startButton
@@ -237,6 +237,52 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting House";
             // 
+            // greyhoundNumberButton
+            // 
+            this.greyhoundNumberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.greyhoundNumberButton.Location = new System.Drawing.Point(482, 271);
+            this.greyhoundNumberButton.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.greyhoundNumberButton.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.greyhoundNumberButton.Name = "greyhoundNumberButton";
+            this.greyhoundNumberButton.Size = new System.Drawing.Size(50, 26);
+            this.greyhoundNumberButton.TabIndex = 24;
+            this.greyhoundNumberButton.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // amountButton
+            // 
+            this.amountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountButton.Location = new System.Drawing.Point(203, 271);
+            this.amountButton.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.amountButton.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.amountButton.Name = "amountButton";
+            this.amountButton.Size = new System.Drawing.Size(79, 26);
+            this.amountButton.TabIndex = 23;
+            this.amountButton.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
             // playerLabel3
             // 
             this.playerLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -267,51 +313,9 @@
             this.playerLabel1.TabIndex = 20;
             this.playerLabel1.Text = "playerLabel1";
             // 
-            // amountButton
+            // timer1
             // 
-            this.amountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountButton.Location = new System.Drawing.Point(203, 271);
-            this.amountButton.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.amountButton.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.amountButton.Name = "amountButton";
-            this.amountButton.Size = new System.Drawing.Size(79, 26);
-            this.amountButton.TabIndex = 23;
-            this.amountButton.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // greyhoundNumberButton
-            // 
-            this.greyhoundNumberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.greyhoundNumberButton.Location = new System.Drawing.Point(482, 271);
-            this.greyhoundNumberButton.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.greyhoundNumberButton.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.greyhoundNumberButton.Name = "greyhoundNumberButton";
-            this.greyhoundNumberButton.Size = new System.Drawing.Size(50, 26);
-            this.greyhoundNumberButton.TabIndex = 24;
-            this.greyhoundNumberButton.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -337,8 +341,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundPictureBox4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.amountButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greyhoundNumberButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amountButton)).EndInit();
             this.ResumeLayout(false);
 
         }

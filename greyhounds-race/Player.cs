@@ -23,7 +23,7 @@ namespace greyhounds_race
 
         public bool PlaceBet(int Amount, int DogToWin)
         {
-            MyBet = new Bet() { Amount = Amount, Dog = DogToWin };
+            MyBet = new Bet() { Amount = Amount, Dog = DogToWin, Bettor = this };
             return (Cash >= Amount);
         }
 

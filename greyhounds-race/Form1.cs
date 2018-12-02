@@ -124,5 +124,28 @@ namespace greyhounds_race
                 PlayerArray[2].UpdateLabels();
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < GreyhoundArray.Length; i++)
+            {
+                groupBox1.Enabled = false;
+                if (GreyhoundArray[i].Run())
+                {
+                    timer1.Stop();
+                    MessageBox.Show("The winner is Greyhound number " + (i + 1);
+                    for (int j = 0; i < PlayerArray.Length; j++)
+                    {
+                        PlayerArray[j].Collect(i);
+                        PlayerArray[j].ClearBet();
+                    }
+                    for (int k = 0; i < GreyhoundArray.Length; k++)
+                    {
+                        GreyhoundArray[k].TakeStartingPosition();
+                    }
+                    groupBox1.Enabled = true;
+                }
+            }
+        }
     }
 }
