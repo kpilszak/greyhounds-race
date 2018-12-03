@@ -14,6 +14,7 @@ namespace greyhounds_race
     {
         public Greyhound[] GreyhoundArray = new Greyhound[4];
         public Player[] PlayerArray = new Player[3];
+        public Random Randomizer = new Random();
 
         public Form1()
         {
@@ -28,28 +29,32 @@ namespace greyhounds_race
             {
                 MyPictureBox = greyhoundPictureBox1,
                 StartingPosition = greyhoundPictureBox1.Left,
-                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox1.Width                       
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox1.Width,
+                MyRandom = Randomizer
             };
 
             GreyhoundArray[1] = new Greyhound()
             {
                 MyPictureBox = greyhoundPictureBox2,
                 StartingPosition = greyhoundPictureBox2.Left,
-                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox2.Width
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox2.Width,
+                MyRandom = Randomizer
             };
 
             GreyhoundArray[2] = new Greyhound()
             {
                 MyPictureBox = greyhoundPictureBox3,
                 StartingPosition = greyhoundPictureBox3.Left,
-                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox3.Width
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox3.Width,
+                MyRandom = Randomizer
             };
 
             GreyhoundArray[3] = new Greyhound()
             {
                 MyPictureBox = greyhoundPictureBox4,
                 StartingPosition = greyhoundPictureBox4.Left,
-                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox4.Width
+                RaceTrackLength = raceTrackPictureBox.Width - greyhoundPictureBox4.Width,
+                MyRandom = Randomizer
             };
         }
 
@@ -79,11 +84,7 @@ namespace greyhounds_race
                 BetLabel = playerLabel3
             };
 
-            for (int i = 0; i < PlayerArray.Length; i++)
-            {
-                PlayerArray[i].ClearBet();
-                PlayerArray[i].UpdateLabels();
-            }
+            
         }
 
         private void startButton_Click(object sender, EventArgs e)
