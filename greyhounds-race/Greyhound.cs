@@ -14,7 +14,7 @@ namespace greyhounds_race
         public bool Run()
         {   
             Location += MyRandom.Next(1, 5);
-            MyPictureBox.Left = StartingPosition + Location;
+            MyPictureBox.Left = Location;
             return (MyPictureBox.Left >= RaceTrackLength);
         }
 

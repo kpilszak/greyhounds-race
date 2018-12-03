@@ -77,7 +77,7 @@
             this.raceTrackPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("raceTrackPictureBox.Image")));
             this.raceTrackPictureBox.Location = new System.Drawing.Point(13, 13);
             this.raceTrackPictureBox.Name = "raceTrackPictureBox";
-            this.raceTrackPictureBox.Size = new System.Drawing.Size(814, 230);
+            this.raceTrackPictureBox.Size = new System.Drawing.Size(808, 230);
             this.raceTrackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.raceTrackPictureBox.TabIndex = 1;
             this.raceTrackPictureBox.TabStop = false;
@@ -95,7 +95,7 @@
             // greyhoundPictureBox2
             // 
             this.greyhoundPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("greyhoundPictureBox2.Image")));
-            this.greyhoundPictureBox2.Location = new System.Drawing.Point(13, 77);
+            this.greyhoundPictureBox2.Location = new System.Drawing.Point(13, 80);
             this.greyhoundPictureBox2.Name = "greyhoundPictureBox2";
             this.greyhoundPictureBox2.Size = new System.Drawing.Size(105, 28);
             this.greyhoundPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             // greyhoundPictureBox3
             // 
             this.greyhoundPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("greyhoundPictureBox3.Image")));
-            this.greyhoundPictureBox3.Location = new System.Drawing.Point(13, 141);
+            this.greyhoundPictureBox3.Location = new System.Drawing.Point(13, 143);
             this.greyhoundPictureBox3.Name = "greyhoundPictureBox3";
             this.greyhoundPictureBox3.Size = new System.Drawing.Size(105, 28);
             this.greyhoundPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

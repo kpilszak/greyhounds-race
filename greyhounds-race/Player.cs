@@ -28,7 +28,7 @@ namespace greyhounds_race
 
         public void ClearBet()
         {
-            MyBet = null;
+            PlaceBet(0, 0);
         }
 
         public bool PlaceBet(int Amount, int DogToWin)

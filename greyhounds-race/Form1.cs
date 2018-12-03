@@ -113,19 +113,16 @@ namespace greyhounds_race
         
         private void betsButton_Click(object sender, EventArgs e)
         {
-            if (playerRadioButton1.Checked)
+            if (playerRadioButton1.Checked && PlayerArray[0].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value))
             {
-                PlayerArray[0].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value);
                 PlayerArray[0].UpdateLabels();
             }
-            else if (playerRadioButton2.Checked)
+            else if (playerRadioButton2.Checked && PlayerArray[1].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value))
             {
-                PlayerArray[1].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value);
                 PlayerArray[1].UpdateLabels();
             }
-            else if (playerRadioButton3.Checked)
+            else if (playerRadioButton3.Checked && PlayerArray[2].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value))
             {
-                PlayerArray[2].PlaceBet((int)amountButton.Value, (int)greyhoundNumberButton.Value);
                 PlayerArray[2].UpdateLabels();
             }
         }
@@ -141,6 +138,7 @@ namespace greyhounds_race
                     for (int j = 0; j < PlayerArray.Length; j++)
                     {
                         PlayerArray[j].Collect(i+1);
+                        PlayerArray[j].UpdateLabels();
                         PlayerArray[j].ClearBet();
                     }
                     for (int k = 0; k < GreyhoundArray.Length; k++)
