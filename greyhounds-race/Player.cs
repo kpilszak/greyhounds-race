@@ -12,8 +12,18 @@ namespace greyhounds_race
         
         public void UpdateLabels()
         {
-            BetLabel.Text = MyBet.GetDescription();
-            PlayerButton.Text = Name + " has " + Cash + "$";
+            try
+            {
+                BetLabel.Text = MyBet.GetDescription();
+            }
+            catch(System.NullReferenceException e)
+            {
+                
+            }
+            finally
+            {
+                PlayerButton.Text = Name + " has " + Cash + "$";
+            }
         }
 
         public void ClearBet()

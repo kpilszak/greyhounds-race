@@ -64,9 +64,9 @@ namespace greyhounds_race
             {
                 Name = "Chuck",
                 Cash = 100,
-                PlayerButton = playerRadioButton1,
+                PlayerButton = playerRadioButton1,                
                 BetLabel = playerLabel1
-            };
+            };            
 
             PlayerArray[1] = new Player()
             {
@@ -84,7 +84,10 @@ namespace greyhounds_race
                 BetLabel = playerLabel3
             };
 
-            
+            for (int i = 0; i < PlayerArray.Length; i++)
+            {
+                PlayerArray[i].UpdateLabels();             
+            }
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -135,12 +138,12 @@ namespace greyhounds_race
                 {
                     timer1.Stop();
                     MessageBox.Show("The winner is Greyhound number " + (i + 1));
-                    for (int j = 0; i < PlayerArray.Length; j++)
+                    for (int j = 0; j < PlayerArray.Length; j++)
                     {
-                        PlayerArray[j].Collect(i);
+                        PlayerArray[j].Collect(i+1);
                         PlayerArray[j].ClearBet();
                     }
-                    for (int k = 0; i < GreyhoundArray.Length; k++)
+                    for (int k = 0; k < GreyhoundArray.Length; k++)
                     {
                         GreyhoundArray[k].TakeStartingPosition();
                     }
