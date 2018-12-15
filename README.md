@@ -1,4 +1,4 @@
-<h1 align="right">Greyhounds Race Game</h1><br>
+<h1 align="right">Greyhounds Race</h1><br>
 
 ## Table of contents
 * [General info](#general-info)
