@@ -86,7 +86,8 @@ namespace greyhounds_race
 
             for (int i = 0; i < PlayerArray.Length; i++)
             {
-                PlayerArray[i].UpdateLabels();             
+                PlayerArray[i].UpdateLabels();
+                PlayerArray[i].ClearBet();
             }
         }
 
