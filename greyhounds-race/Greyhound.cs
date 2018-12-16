@@ -20,7 +20,8 @@ namespace greyhounds_race
 
         public void TakeStartingPosition()
         {
-            Location = 0;
+            Location = 13;
+            StartingPosition = 13;
             MyPictureBox.Left = StartingPosition;
         }
     }
