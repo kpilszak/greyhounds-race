@@ -291,6 +291,7 @@
             this.playerLabel3.Name = "playerLabel3";
             this.playerLabel3.Size = new System.Drawing.Size(277, 26);
             this.playerLabel3.TabIndex = 22;
+            this.playerLabel3.Text = "Dan hasn\'t placed a bet.";
             // 
             // playerLabel2
             // 
@@ -300,6 +301,7 @@
             this.playerLabel2.Name = "playerLabel2";
             this.playerLabel2.Size = new System.Drawing.Size(277, 26);
             this.playerLabel2.TabIndex = 21;
+            this.playerLabel2.Text = "Nate hasn\'t placed a bet.";
             // 
             // playerLabel1
             // 
@@ -309,6 +311,7 @@
             this.playerLabel1.Name = "playerLabel1";
             this.playerLabel1.Size = new System.Drawing.Size(277, 26);
             this.playerLabel1.TabIndex = 20;
+            this.playerLabel1.Text = "Chuck hasn\'t placed a bet.";
             // 
             // timer1
             // 

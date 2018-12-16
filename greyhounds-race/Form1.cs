@@ -137,9 +137,9 @@ namespace greyhounds_race
                     MessageBox.Show("The winner is Greyhound number " + (i + 1));
                     for (int j = 0; j < PlayerArray.Length; j++)
                     {
-                        PlayerArray[j].Collect(i+1);
-                        PlayerArray[j].UpdateLabels();
+                        PlayerArray[j].Collect(i+1);                        
                         PlayerArray[j].ClearBet();
+                        PlayerArray[j].UpdateLabels();
                     }
                     for (int k = 0; k < GreyhoundArray.Length; k++)
                     {
