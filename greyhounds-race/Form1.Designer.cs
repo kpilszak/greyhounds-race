@@ -186,11 +186,11 @@
             // 
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(16, 271);
+            this.name.Location = new System.Drawing.Point(16, 273);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(49, 20);
+            this.name.Size = new System.Drawing.Size(54, 20);
             this.name.TabIndex = 15;
-            this.name.Text = "name";
+            this.name.Text = "Chuck";
             // 
             // betsButton
             // 
@@ -255,7 +255,7 @@
             this.greyhoundNumberButton.Size = new System.Drawing.Size(50, 26);
             this.greyhoundNumberButton.TabIndex = 24;
             this.greyhoundNumberButton.Value = new decimal(new int[] {
-            3,
+            1,
             0,
             0,
             0});
@@ -291,7 +291,6 @@
             this.playerLabel3.Name = "playerLabel3";
             this.playerLabel3.Size = new System.Drawing.Size(277, 26);
             this.playerLabel3.TabIndex = 22;
-            this.playerLabel3.Text = "playerLabel3";
             // 
             // playerLabel2
             // 
@@ -301,7 +300,6 @@
             this.playerLabel2.Name = "playerLabel2";
             this.playerLabel2.Size = new System.Drawing.Size(277, 26);
             this.playerLabel2.TabIndex = 21;
-            this.playerLabel2.Text = "playerLabel2";
             // 
             // playerLabel1
             // 
@@ -311,7 +309,6 @@
             this.playerLabel1.Name = "playerLabel1";
             this.playerLabel1.Size = new System.Drawing.Size(277, 26);
             this.playerLabel1.TabIndex = 20;
-            this.playerLabel1.Text = "playerLabel1";
             // 
             // timer1
             // 
