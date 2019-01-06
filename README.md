@@ -23,7 +23,7 @@ IDE: Visual Studio 2017
 * Windows 10
 
 ## Setup
-To run this project, open in Windows this file: /greyhounds-race/obj/Debug/greyhounds-race.exe
+To run this project, download and open in Windows this file: <a href="https://github.com/kpilszak/greyhounds-race/blob/master/greyhounds-race/obj/Debug/greyhounds-race.exe">/greyhounds-race/obj/Debug/greyhounds-race.exe</a>
 
 ## Sources
 This project was created as an exercise from Jennifer Greene and Andrew Stellman book "Head First. C#".
